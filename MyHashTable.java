@@ -29,15 +29,15 @@ public class MyHashTable<K, V> {
         this.loadFactor = loadFactor;
     }
 
-    public int size() {
+    public int size() { //returns the number of key-value pairs in the hash table
         return this.size;
     }
 
-    public boolean isEmpty() {
+    public boolean isEmpty() { //returns true if the hash table is empty, false otherwise
         return this.size == 0;
     }
 
-    public void put(K key, V value) {
+    public void put(K key, V value) { //puts a key-value pair into the hash table
         if (key == null) {
             throw new IllegalArgumentException("Key cannot be null");
         }
@@ -56,7 +56,7 @@ public class MyHashTable<K, V> {
         }
     }
 
-    public V get(K key) {
+    public V get(K key) { //returns the value associated with the given key in the hash table
         if (key == null) {
             throw new IllegalArgumentException("Key cannot be null");
         }
@@ -70,7 +70,7 @@ public class MyHashTable<K, V> {
         return null;
     }
 
-    public V remove(K key) {
+    public V remove(K key) { //removes the key-value pair associated with the given key from the hash table
         if (key == null) {
             throw new IllegalArgumentException("Key cannot be null");
         }
@@ -87,7 +87,7 @@ public class MyHashTable<K, V> {
         return null;
     }
 
-    public int getBucketIndex(K key) {
+    public int getBucketIndex(K key) { //returns the index of the bucket where the key should be located in the hash table
         int hashCode = key.hashCode();
         int bucketIndex = hashCode % this.capacity;
         return Math.abs(bucketIndex);
