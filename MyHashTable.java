@@ -93,7 +93,7 @@ public class MyHashTable<K, V> {
         return Math.abs(bucketIndex);
     }
 
-    private void rehash() {
+    private void rehash() { //increasing the capacity of hash table,rehashing all the elements
         List<List<Entry<K, V>>> oldBuckets = this.buckets;
         this.capacity *= 2;
         this.size = 0;
@@ -108,7 +108,7 @@ public class MyHashTable<K, V> {
         }
     }
 
-    private static class Entry<K, V> {
+    private static class Entry<K, V> { // represents a key-value pair that can be stored in the hash table
         private K key;
         private V value;
 
