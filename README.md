@@ -1,7 +1,7 @@
 # assignment4
 #Mukanova Amina, SE-2215
 
-
+MYTESTINGCLASS
 "MyTestingClass(int id, String name)": This is the constructor of the class which takes in two,
 id and name, and initializes the id and name instance variables with the given values.
 
@@ -23,6 +23,7 @@ The hash code is calculated using the id and name instance variables.
 "public void setName(String name)": This method sets the value of the name instance variable to the given name.
 
 
+MYHASHTABLE
 "public MyHashTable()": Constructor for creating a new MyHashTable object with default
 capacity and load factor
 
@@ -62,3 +63,7 @@ and updates the size and capacity accordingly
 
 "private static class Entry<K, V>": Represents a key-value pair that can be stored in the hash table. 
 The Entry class is only used internally by the MyHashTable class.
+
+MAIN CLASS
+"main(String[] args)": Creates a new instance of MyHashTable,
+adds 10,000 elements to it with random keys and values.
