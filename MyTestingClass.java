@@ -15,20 +15,20 @@ public class MyTestingClass {
         return result;
     }
 
-    // Getters and setters
-    public int getId() {
+
+    public int getId() { //returns the value of the id instance variable
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(int id) { //sets the value of the id instance variable
         this.id = id;
     }
 
-    public String getName() {
+    public String getName() { //returns the value of the name instance variable
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(String name) { // sets the value of the name instance variable
         this.name = name;
     }
 }
