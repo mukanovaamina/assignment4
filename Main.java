@@ -7,7 +7,7 @@ public class Main {
         Random random = new Random();
 
 
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 10000; i++) { //Adding 10000 elements
             int id = random.nextInt(1000);
             String name = "Name_" + i;
             MyTestingClass key = new MyTestingClass(id, name);
